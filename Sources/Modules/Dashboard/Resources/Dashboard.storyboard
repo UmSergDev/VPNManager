@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wB6-hT-xjV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ckN-wU-eRc">
+            <objects>
+                <navigationController id="wB6-hT-xjV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iwT-4F-LYG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="h8Y-1x-T9B" kind="relationship" relationship="rootViewController" id="XEZ-xb-FBY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6G-me-7JR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-718" y="134"/>
+        </scene>
+        <!--VPN Manager-->
+        <scene sceneID="8DU-fl-XHJ">
+            <objects>
+                <tableViewController title="VPN Manager" id="h8Y-1x-T9B" customClass="DashboardPresenter" customModule="VPNManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="RWW-Xa-ZUq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="h8Y-1x-T9B" id="oPW-h2-cvc"/>
+                            <outlet property="delegate" destination="h8Y-1x-T9B" id="o4C-Z0-7cd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="VPN Manager" id="OYH-LY-CRp"/>
+                    <connections>
+                        <segue destination="4hv-yt-4fZ" kind="show" identifier="Detail" id="Q6a-W0-x4L"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="un8-PW-mmK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="135"/>
+        </scene>
+        <!--Editor-->
+        <scene sceneID="gIB-7W-b7d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Editor" id="4hv-yt-4fZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZW9-1B-jVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="607" y="54"/>
+        </scene>
+    </scenes>
+</document>

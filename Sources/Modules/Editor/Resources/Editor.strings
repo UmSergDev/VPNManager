@@ -1,0 +1,19 @@
+/* 
+  Editor.strings
+  VPN Manager
+
+    Created by Sergey Umarov on 24.11.16.
+     Copyright © 2016 Sergey Umarov. All rights reserved.
+*/
+
+
+"connection-type" = "Type";
+"title" = "Title";
+"server-name" = "Server";
+"remote-id" = "Remote ID";
+"local-id" = "Local ID";
+"auth-method" = "Auth. method";
+"username" = "Username";
+"password" = "Password";
+"delete" = "Delete";
+"required" = "Required";

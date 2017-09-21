@@ -1,0 +1,11 @@
+/* 
+  Dashboard.strings
+  VPNManager
+
+    Created by Sergey Umarov on 24.11.16.
+    Copyright © 2016 Sergey Umarov. All rights reserved.
+*/
+
+"status-title" = "Status";
+"add-connection" = "Add VPN connection";
+"no-connections" = "No connections";
